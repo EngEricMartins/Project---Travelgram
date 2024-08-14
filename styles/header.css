@@ -1,0 +1,48 @@
+header {
+  display: flex;
+  padding-block: 32px;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1280px;
+}
+
+
+main {
+  max-width: 592px;
+  display: flex;
+  gap: 32px;
+}
+main .about {
+  max-width: 384px;
+  max-height: 168px;
+}
+main .about h1 {
+  color: var(--text-color-primary);
+  font-size: 32px;
+  line-height: 125%;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+main .about p {
+  color:var(--text-color-secundary);
+  font-size: 14px;
+  line-height: 175%;
+}
+
+
+
+header ul {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  height: 104px;
+  gap: 16px;
+}
+
+header ul span {
+  display: flex;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 170%;
+}
+

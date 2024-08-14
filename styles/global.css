@@ -1,0 +1,51 @@
+/* Universal settings  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* root setting */
+:root {
+  /* Settings geral colors */
+  --brand-color: #EF5F4C;
+  --background-color: #FFFFFF;
+  --surface-color: #F5F5F5;
+  --skeleton-color: #D9D9D9;
+  --shape-transparency: #ffffff91;
+  --text-color-primary: #313131;
+  --text-color-secundary: #6c6c6c;
+
+  /* Settings geral font  */
+  --font-family: "Poppins", sans-serif;
+  --text-lg: bold 32px/125% var(var(--font-family));
+  --text-md: 14px/170% var(var(--font-family));
+  --text-sm: 12px/170% var(var(--font-family));
+  --text-df: 16px/150% var(var(--font-family));
+
+  font-family: "Poppins", sans-serif;
+}
+body {
+  color:var(--text-color-secundary);
+  background-color: var(--background-color);
+}
+
+a {
+  color: inherit; /* valor inherit = erdar a cor secundaria  */
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--brand-color);
+  text-decoration: underline;
+}
+
+.bg-surface-color {
+  background-color: var(--surface-color);
+}
+
+.container {
+  padding-inline: 32px; /*inline significa nas laterais  */
+  margin-inline: auto;
+  max-width: 1280px;
+}

@@ -26,3 +26,24 @@ nav ul a {
   line-height: 150%;
 }
 
+@media (width <= 31.25em) {
+
+  & nav {
+    
+
+    & #primary-menu {
+      gap: 1rem;
+    }
+    
+  }
+  & .only-desktop {
+    display: none;
+ }
+  & #lupa {
+    width: 1.5rem;
+  }
+}
+
+
+
+

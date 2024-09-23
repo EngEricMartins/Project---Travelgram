@@ -11,22 +11,40 @@ main {
   max-width: 592px;
   display: flex;
   gap: 32px;
-}
-main .about {
-  max-width: 384px;
-  max-height: 168px;
-}
-main .about h1 {
-  color: var(--text-color-primary);
-  font-size: 32px;
-  line-height: 125%;
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-main .about p {
-  color:var(--text-color-secundary);
-  font-size: 14px;
-  line-height: 175%;
+
+  & main .about {
+    max-width: 384px;
+    max-height: 168px;
+  }
+  & .about h1 {
+    color: var(--text-color-primary);
+    font-size: 32px;
+    line-height: 125%;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  & .about p {
+    color:var(--text-color-secundary);
+    font-size: 14px;
+    line-height: 175%;
+  }
+
+  @media (width <= 31.25em) {
+    max-width: 18.5rem;
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+
+    & img {
+      width: 7.5rem;
+    }
+
+    & .about h1 {
+      margin-bottom: 0.5rem;
+      font-size: 1.5rem;
+      color: var(--text-color-primary);
+    }
+  }
 }
 
 
@@ -46,3 +64,11 @@ header ul span {
   line-height: 170%;
 }
 
+header {
+  @media (width <= 31.25em) {
+    max-width: 22.5rem;
+    display: grid;
+    justify-content: center;
+    gap:2rem;
+  }
+}

@@ -25,9 +25,19 @@
 
   font-family: "Poppins", sans-serif;
 }
+html {
+  @media (width <= 31.25em) {
+    overflow: initial;
+  }
+}
+
 body {
   color:var(--text-color-secundary);
   background-color: var(--background-color);
+
+  @media (width <= 31.25em) {
+    overflow: initial;
+  }
 }
 
 a {
@@ -44,8 +54,31 @@ a:hover {
   background-color: var(--surface-color);
 }
 
-.container {
+.container-1 {
   padding-inline: 32px; /*inline significa nas laterais  */
   margin-inline: auto;
   max-width: 1280px;
+
+  @media (width <= 31.25em) { 
+    max-width: 22.5rem;
+    padding: 1rem;
+  }
+  
+}
+.container-2 {
+  padding-inline: 32px; /*inline significa nas laterais  */
+  margin-inline: auto;
+  max-width: 1280px;
+  @media (width <= 31.25em) { 
+    max-width: 22.5rem;
+    padding: 1rem;
+  }
+}
+
+.only-desktop {
+  display: initial;
+}
+
+.container-mobile {
+  max-width: 22.5rem;
 }

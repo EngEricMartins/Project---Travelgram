@@ -8,4 +8,20 @@
   width: 286px;
   height: 286px;
   object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+@media (width <= 31.25em) {
+  & .images {
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 0rem;
+    padding-top: 0rem;
+  }
+  & .images img {
+    width: 24rem;
+    height: 24rem;
+    border-radius: 0.5rem;
+  }
 }
